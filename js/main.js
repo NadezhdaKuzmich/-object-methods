@@ -49,7 +49,7 @@ Object.defineProperty(employee, "lieToEmployer", {
         for(let key in this) {
             count++;
             if(descript[key].writable === false) {
-                console.assert(descript[key].writable === true, {key, errorMsg});
+                console.assert(descript[key].writable === true, { key, errorMsg });
             } else {
                 this[key] = split[count];        
                 console.log('You changed the value.');
